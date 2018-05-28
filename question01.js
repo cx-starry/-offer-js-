@@ -5,9 +5,9 @@
 // 矩阵是有序的，从左下角来看，向上数字递减，向右数字递增， 因此从左下角开始查找，当要查找数字比左下角数字大时，右移；要查找数字比左下角数字小时，上移。
 function Find(target, array)
 {
-  var row = array.length;
-  var i = row-1;
-  var j = 0;
+  let row = array.length;
+  let i = row-1;
+  let j = 0;
   while( i>=0 && array[i][j]){
     if (array[i][j]<target){
       j++;
